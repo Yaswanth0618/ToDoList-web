@@ -3,10 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const addTaskBtn = document.getElementById("addTaskBtn");
     const taskList = document.getElementById("taskList");
   
-    // Load tasks from local storage
     let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
   
-    // Render tasks
     function renderTasks() {
       taskList.innerHTML = "";
       tasks.forEach(function(task, index) {
@@ -19,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
   
     renderTasks();
   
-    // Add task
     addTaskBtn.addEventListener("click", function() {
       const taskText = taskInput.value.trim();
       if (taskText !== "") {
@@ -30,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   
-    // Delete task
     taskList.addEventListener("click", function(event) {
       if (event.target.classList.contains("delete-btn")) {
         const index = event.target.getAttribute("data-index");
