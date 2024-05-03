@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .delete-btn {
+    padding: 8px 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    float: right; /* Shift the button to the right */
+    margin-left: 10px; /* Add some space between the button and the task text */
+  }
+  
+  .delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center; /* Center the task text vertically */
+  }
+  
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 8px;
+  }
+  
+  button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
